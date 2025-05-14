@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccee66; /*cor de fundo */
+    color: white; /*cor do texto*/
+    padding: 20px 160px; 
+    height: 100vh; /* altura */
+    font-family: "Noto Sans", sans-serif;
+    overflow: hidden;/*o que fazer com que sobra*/
+}
+body::before{
+    content: '';
+    background: #202020;
+    position: absolute;
+    top: 0;
+    left: -800px;/*px-em*/
+    transform: rotate(-70deg);
+    width: 100%;
+    height: 120%;
+}
+body::after {
+    content: 'Nike';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 250px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+/*after (depois) before (antes)*/
+/*class = . */
+ .logo {
+    width: 80px; /*largura*/
+    position: absolute;
+ }
+h4 {
+    font-size: 80px;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    
+}
+.botao-carrinho {
+    background-color: #a3be52;
+    padding: 10px 20px ;
+    border-radius: 16px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5;
+}
+.botao-carrinho:hover {
+    opacity: 0.7;
+}
+.imagem-tenis {
+width: 800px;
+transform: rotate(-25deg);
+filter: drop-shadow(30px 45px 40px #161616 );
+transition: 1s;
+
+}
+.troca-efeito{
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px);
+}
+.caixa-principal {
+    display: flex; /*habilita alguns super poderes*/
+    justify-content: space-between; /*espaço entre */
+    align-items: center; /*alinha na vertical*/
+    height: 75%;
+    position: relative; 
+    z-index: 1;
+}
+.caixa-texto {
+    max-width: 500px;
+}
+.caixa-botoes {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+.botoes {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+cursor: pointer;
+}
+.botoes:active {
+    opacity: 0.6;
+}
+
+.verde {
+    background-color: #ccee66;
+}
+.azul {
+    background-color: #58cced;
+}
+.rosa {
+    background-color: #ff9eb5;
+}
